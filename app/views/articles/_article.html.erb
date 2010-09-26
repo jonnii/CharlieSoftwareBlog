@@ -1,0 +1,10 @@
+<h1><%= link_to @article.title, @article %></h1>
+<p class="date_posted"><%= format_date @article%></p>
+<div class="article_body"><%= @article.body %></div>
+<%@article.tags.each do |tag|%>
+    <%= link_to tag.name, tag_path(tag.id), :class => "tag" %>
+<%end%>
+<ul class="post_options_list">
+  <li>&raquo; <%= link_to "Edit", edit_article_path(@article.id), :id => "Edit_" + @article.id.to_s %></li>
+  <li>&raquo; <a href="">Comments</a></li>
+</ul>

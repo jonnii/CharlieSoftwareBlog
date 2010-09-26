@@ -1,0 +1,6 @@
+<h1>Posts tagged with &#8220;<%= @tag.name %>&#8221;</h1>
+<% @tag.articles.each do |article| %>
+    <hr />
+    <h2><%= link_to article.title, article %></h2>
+    <p class="date_posted"><%= format_date article%></p>
+<%end%>

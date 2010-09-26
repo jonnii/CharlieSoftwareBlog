@@ -1,0 +1,29 @@
+<script type="text/javascript" >
+   $(document).ready(function() {
+      $("#article_body").markItUp(mySettings);
+   });
+</script>
+
+<% form_for @article do |f| %>
+
+    <p>
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+    </p>
+    <p>
+      <%= f.label :body %>
+      <%= f.text_area :body %>
+    </p>
+    <p>
+      <label for="tags">Tags</label>
+      <input type="text" name="tags" id="tags" value="<%= @article.tag_list%>"/>
+    </p>
+    
+    <p>
+      <%= f.submit "Update" %>
+    </p>
+<% end %>
+
+<script type="text/javascript">
+  
+</script>

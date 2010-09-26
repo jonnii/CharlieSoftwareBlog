@@ -1,0 +1,189 @@
+body {
+    font-family: Arial,sans-serif;
+    margin:0px;
+    padding:0px;
+    background-image:url(../Images/background.jpg);
+    font-family: "Georgia", "Book Antiqua", "serif";
+}
+
+img.logo {
+    padding-top:10px;
+    border:none;
+}
+
+.header {
+    height:75px;
+    background-color:#000000;
+}
+
+.header_content {
+    width:900px;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+.login{
+    float:right;
+    color:#FFFFFF;
+    margin-top:5px;
+    font-size:80%;
+    cursor:pointer;
+}
+
+.site_body {
+    padding-top:17px;
+    width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+    background-image:url(../Images/page_top.png);
+    background-repeat:no-repeat;
+}
+
+.page_body {
+    background-image:url(../Images/page_background.png);
+    background-repeat:repeat-y;
+    padding:30px;                                                                                                     
+    width:840px;
+    padding-top:10px;
+    overflow:hidden;
+}
+.page_body_content {
+    width:570px;
+    float:left;
+    padding-right:20px;
+}
+.date_posted {
+    font-family: "Georgia", "Book Antiqua", "serif";
+    font-size:80%;
+    color:#FF9900;
+    width:100%;
+    float:left;
+}
+.article_body{
+    float:left;
+    width:100%;
+}
+.side_bar{
+    width:230px;
+    float:left;
+    margin-left:20px;
+}
+.footer {
+    background-image:url(../Images/page_bottom.png);
+    background-repeat:no-repeat;
+    background-position:0 0;
+    height:15px;
+    padding:30px;
+    width:840px;
+    font-family: "Georgia", "Book Antiqua", "serif";
+    font-size:12px;
+    font-style: italic;
+    padding-top:12px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+h1 {
+	font-size: 150%;
+	line-height: 144%;
+	font-family: "Georgia", "Book Antiqua", "serif";
+	font-style: italic;
+	color: #2f4c51;
+	letter-spacing: -1px;
+	margin:0;
+}
+
+hr {
+    width:100%;
+    float:left;
+    border:1px solid #CCCCCC;
+}
+h1{
+    width:100%;
+    float:left;
+}
+h1 a, h2 a{
+    color:#2f4c51;
+    text-decoration:none;
+}
+
+h1 a:hover, h2 a:hover {
+    text-decoration:underline;
+    color:#FF9900;
+}
+
+h2 {
+	font-size: 110%;
+	line-height: 144%;
+	font-family: "Georgia", "Book Antiqua", "serif";
+	width: 500px;
+	font-style: italic;
+	color: #2f4c51;
+	letter-spacing: -1px;
+	margin:0;
+
+}
+
+.side_bar h2,.side_bar ul {
+    width:100%;
+    float:left;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+a.tag{
+    margin:5px;
+    margin-left:0px;
+    border:1px solid #CCCCCC;
+    padding:5px;
+    float:left;
+    background-color:#E5E5E5;
+    color:#000000;
+    text-decoration:none;
+}
+
+a.tag:hover{
+    background-color:#003399;
+    color:#FFFFFF;
+}
+ul.post_options_list{
+    float:left;
+    width:100%;
+    margin:0px;
+    padding:0px;
+    list-style:none;
+}
+ul.post_options_list li {
+    float:left;
+    padding-right:20px;
+}
+ul.post_options_list li a{
+    color:#333333;
+}
+blockquote{
+    background-color:#EFEFEF;
+    font-style:italic;
+    margin:10px;
+    padding:10px;
+}
+#login_dialog{
+    font-size:60%;
+}
+
+ul.admin_menu
+{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+
+ul.admin_menu li
+{
+	padding:0px;
+}
+
+ul.admin_menu li a
+{
+	color:#003399;
+}

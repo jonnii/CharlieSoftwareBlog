@@ -1,0 +1,934 @@
+# Logfile created on Mon Sep 20 20:15:04 +0100 2010  [4;36;1mArticle Create (0.4ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 19:17:00', 'Bridges, Skyscrapers', NULL, '2010-09-20 19:17:00')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 20:17:00) [GET]
+  [4;35;1mArticle Delete all (0.2ms)[0m   [0mDELETE FROM "articles" WHERE 1=1[0m
+  [4;36;1mArticle Delete all (0.2ms)[0m   [0;1mDELETE FROM "articles" WHERE 1=1[0m
+  [4;35;1mArticle Create (0.3ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 19:17:00', 'Big Bananas', 'Big bananas are good for you', '2010-09-20 19:17:00')[0m
+  [4;36;1mArticle Create (1.0ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 19:35:01', 'Bridges, Skyscrapers', NULL, '2010-09-20 19:35:01')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 20:35:01) [GET]
+  [4;35;1mArticle Delete all (0.2ms)[0m   [0mDELETE FROM "articles" WHERE 1=1[0m
+  [4;36;1mArticle Delete all (0.3ms)[0m   [0;1mDELETE FROM "articles" WHERE 1=1[0m
+  [4;35;1mArticle Create (0.3ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 19:35:01', 'Big Bananas', 'Big bananas are good for you', '2010-09-20 19:35:01')[0m
+  [4;36;1mArticle Create (0.4ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 19:37:52', 'Bridges, Skyscrapers', NULL, '2010-09-20 19:37:52')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 20:37:52) [GET]
+  [4;35;1mArticle Delete all (0.3ms)[0m   [0mDELETE FROM "articles" WHERE 1=1[0m
+  [4;36;1mArticle Delete all (0.2ms)[0m   [0;1mDELETE FROM "articles" WHERE 1=1[0m
+  [4;35;1mArticle Create (0.3ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 19:37:52', 'Big Bananas', 'Big bananas are good for you', '2010-09-20 19:37:52')[0m
+  [4;36;1mArticle Create (0.7ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 19:39:30', 'Bridges, Skyscrapers', NULL, '2010-09-20 19:39:30')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 20:39:30) [GET]
+  [4;35;1mArticle Delete all (0.3ms)[0m   [0mDELETE FROM "articles" WHERE 1=1[0m
+  [4;36;1mArticle Delete all (0.3ms)[0m   [0;1mDELETE FROM "articles" WHERE 1=1[0m
+  [4;35;1mArticle Create (0.4ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 19:39:30', 'Big Bananas', 'Big bananas are good for you', '2010-09-20 19:39:30')[0m
+  [4;36;1mArticle Create (0.4ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 19:40:19', 'Bridges, Skyscrapers', NULL, '2010-09-20 19:40:19')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-20 20:40:19) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 20:40:19) [GET]
+  [4;36;1mArticle Delete all (0.3ms)[0m   [0;1mDELETE FROM "articles" WHERE 1=1[0m
+  [4;35;1mArticle Delete all (0.2ms)[0m   [0mDELETE FROM "articles" WHERE 1=1[0m
+  [4;36;1mArticle Create (0.4ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 19:40:19', 'Big Bananas', 'Big bananas are good for you', '2010-09-20 19:40:19')[0m
+  [4;36;1mArticle Create (0.4ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 19:41:46', 'Bridges, Skyscrapers', NULL, '2010-09-20 19:41:46')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-20 20:41:46) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 20:41:46) [GET]
+  [4;36;1mArticle Delete all (0.2ms)[0m   [0;1mDELETE FROM "articles" WHERE 1=1[0m
+  [4;35;1mArticle Delete all (0.2ms)[0m   [0mDELETE FROM "articles" WHERE 1=1[0m
+  [4;36;1mArticle Create (0.4ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 19:41:47', 'Big Bananas', 'Big bananas are good for you', '2010-09-20 19:41:47')[0m
+  [4;36;1mArticle Create (0.6ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 19:49:11', 'Bridges, Skyscrapers', NULL, '2010-09-20 19:49:11')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-20 20:49:11) [GET]
+  [4;35;1mArticle Load (0.8ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 20:49:11) [GET]
+  [4;36;1mArticle Delete all (0.2ms)[0m   [0;1mDELETE FROM "articles" WHERE 1=1[0m
+  [4;35;1mArticle Delete all (0.3ms)[0m   [0mDELETE FROM "articles" WHERE 1=1[0m
+  [4;36;1mArticle Create (0.4ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 19:49:11', 'Big Bananas', 'Big bananas are good for you', '2010-09-20 19:49:11')[0m
+  [4;36;1mArticle Create (0.5ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 19:51:49', 'Bridges, Skyscrapers', NULL, '2010-09-20 19:51:49')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-20 20:51:49) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 20:51:49) [GET]
+  [4;36;1mArticle Delete all (0.3ms)[0m   [0;1mDELETE FROM "articles" WHERE 1=1[0m
+  [4;35;1mTag Delete all (0.0ms)[0m   [0mSQLite3::SQLException: no such table: tags: DELETE FROM "tags" WHERE 1=1[0m
+  [4;36;1mArticle Delete all (0.3ms)[0m   [0;1mDELETE FROM "articles" WHERE 1=1[0m
+  [4;35;1mArticle Create (0.3ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 19:51:49', 'Big Bananas', 'Big bananas are good for you', '2010-09-20 19:51:49')[0m
+  [4;36;1mArticle Create (0.4ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 19:52:31', 'Bridges, Skyscrapers', NULL, '2010-09-20 19:52:31')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-20 20:52:31) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 20:52:31) [GET]
+  [4;36;1mArticle Delete all (0.2ms)[0m   [0;1mDELETE FROM "articles" WHERE 1=1[0m
+  [4;35;1mTag Delete all (0.0ms)[0m   [0mSQLite3::SQLException: no such table: tags: DELETE FROM "tags" WHERE 1=1[0m
+  [4;36;1mArticle Delete all (0.3ms)[0m   [0;1mDELETE FROM "articles" WHERE 1=1[0m
+  [4;35;1mArticle Create (0.4ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 19:52:31', 'Big Bananas', 'Big bananas are good for you', '2010-09-20 19:52:31')[0m
+  [4;36;1mArticle Create (1.1ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 19:56:24', 'Bridges, Skyscrapers', NULL, '2010-09-20 19:56:24')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-20 20:56:24) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 20:56:24) [GET]
+  [4;36;1mArticle Delete all (0.2ms)[0m   [0;1mDELETE FROM "articles" WHERE 1=1[0m
+  [4;35;1mTag Delete all (0.1ms)[0m   [0mDELETE FROM "tags" WHERE 1=1[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-20 20:56:24) [GET]
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 20:56:24) [GET]
+  [4;35;1mArticle Delete all (0.2ms)[0m   [0mDELETE FROM "articles" WHERE 1=1[0m
+  [4;36;1mTag Create (0.2ms)[0m   [0;1mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('cheese', '2010-09-20 19:56:24', '2010-09-20 19:56:24')[0m
+  [4;35;1mTag Create (0.1ms)[0m   [0mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('marmite', '2010-09-20 19:56:24', '2010-09-20 19:56:24')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-20 20:56:24) [GET]
+  [4;36;1mArticle Load (0.1ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 20:56:24) [GET]
+  [4;35;1mArticle Create (0.3ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 19:56:24', 'Big Bananas', 'Big bananas are good for you', '2010-09-20 19:56:24')[0m
+  [4;36;1mTag Create (0.1ms)[0m   [0;1mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('cheese', '2010-09-20 19:56:24', '2010-09-20 19:56:24')[0m
+  [4;35;1mTag Create (0.1ms)[0m   [0mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES(' marmite', '2010-09-20 19:56:24', '2010-09-20 19:56:24')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-20 20:56:24) [GET]
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 20:56:24) [GET]
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."name" = 'ferrari') LIMIT 1[0m
+  [4;36;1mTag Create (0.3ms)[0m   [0;1mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('ferrari', '2010-09-20 19:56:24', '2010-09-20 19:56:24')[0m
+  [4;35;1mTag Load (0.1ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."name" = 'aston martin') LIMIT 1[0m
+  [4;36;1mTag Create (0.1ms)[0m   [0;1mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('aston martin', '2010-09-20 19:56:24', '2010-09-20 19:56:24')[0m
+  [4;35;1mArticle Create (0.1ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 19:56:24', 'Fast cars', NULL, '2010-09-20 19:56:24')[0m
+  [4;36;1mArticle Create (0.4ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 20:35:17', 'Bridges, Skyscrapers', NULL, '2010-09-20 20:35:17')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-20 21:35:17) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (6.2ms)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:35:17) [GET]
+  [4;35;1mArticle Delete all (0.2ms)[0m   [0mDELETE FROM "articles" WHERE 1=1[0m
+  [4;36;1mTag Delete all (0.1ms)[0m   [0;1mDELETE FROM "tags" WHERE 1=1[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-20 21:35:17) [GET]
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:35:17) [GET]
+  [4;36;1mArticle Delete all (0.2ms)[0m   [0;1mDELETE FROM "articles" WHERE 1=1[0m
+  [4;35;1mTag Create (0.2ms)[0m   [0mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('cheese', '2010-09-20 20:35:17', '2010-09-20 20:35:17')[0m
+  [4;36;1mTag Create (0.1ms)[0m   [0;1mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('marmite', '2010-09-20 20:35:17', '2010-09-20 20:35:17')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-20 21:35:17) [GET]
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:35:17) [GET]
+  [4;36;1mArticle Create (0.3ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 20:35:17', 'Big Bananas', 'Big bananas are good for you', '2010-09-20 20:35:17')[0m
+  [4;35;1mTag Create (0.1ms)[0m   [0mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('cheese', '2010-09-20 20:35:17', '2010-09-20 20:35:17')[0m
+  [4;36;1mTag Create (0.1ms)[0m   [0;1mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES(' marmite', '2010-09-20 20:35:17', '2010-09-20 20:35:17')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-20 21:35:17) [GET]
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.5ms)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:35:17) [GET]
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."name" = 'ferrari') LIMIT 1[0m
+  [4;36;1mTag Create (0.3ms)[0m   [0;1mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('ferrari', '2010-09-20 20:35:17', '2010-09-20 20:35:17')[0m
+  [4;35;1mTag Load (0.1ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."name" = 'aston martin') LIMIT 1[0m
+  [4;36;1mTag Create (0.1ms)[0m   [0;1mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('aston martin', '2010-09-20 20:35:17', '2010-09-20 20:35:17')[0m
+  [4;35;1mArticle Create (0.1ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 20:35:17', 'Fast cars', NULL, '2010-09-20 20:35:17')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO "articles_tags" ("tag_id", "article_id") VALUES (1, 1)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "articles_tags" ("tag_id", "article_id") VALUES (2, 1)[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."name" = 'ferrari') LIMIT 1[0m
+  [4;35;1mArticle Create (0.1ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 20:35:17', 'Italian cars', NULL, '2010-09-20 20:35:17')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "articles_tags" ("tag_id", "article_id") VALUES (1, 2)[0m
+  [4;35;1mTag Load (0.1ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."name" = 'skoda') LIMIT 1[0m
+  [4;36;1mTag Create (0.1ms)[0m   [0;1mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('skoda', '2010-09-20 20:35:17', '2010-09-20 20:35:17')[0m
+  [4;35;1mArticle Create (0.1ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 20:35:17', 'Slow cars', NULL, '2010-09-20 20:35:17')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "articles_tags" ("tag_id", "article_id") VALUES (3, 3)[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-20 21:35:17) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:35:17) [GET]
+  [4;36;1mArticle Create (0.5ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 20:48:11', 'Bridges, Skyscrapers', NULL, '2010-09-20 20:48:11')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-20 21:48:11) [GET]
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:48:11) [GET]
+  [4;35;1mArticle Delete all (0.3ms)[0m   [0mDELETE FROM "articles" WHERE 1=1[0m
+  [4;36;1mTag Delete all (0.1ms)[0m   [0;1mDELETE FROM "tags" WHERE 1=1[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-20 21:48:11) [GET]
+  [4;35;1mTag Load (0.1ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.1ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 11ms (View: 9, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /articles/new with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2010-09-20 21:48:11) [GET]
+  [4;35;1mTag Load (0.1ms)[0m   [0mSELECT * FROM "tags" [0m
+Rendering template within layouts/application
+Rendering articles/new
+Completed in 75ms (View: 74, DB: 0) | 200 OK [http://www.example.com/articles/new]
+REQUESTING PAGE: POST /articles with {"article"=>{"body"=>"An article all about bananas", "title"=>"Bananas"}, "commit"=>"Save", "tags"=>"fruit, yellow, food"} and HTTP headers {"HTTP_REFERER"=>"/articles/new"}
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2010-09-20 21:48:11) [POST]
+  Parameters: {"article"=>{"title"=>"Bananas", "body"=>"An article all about bananas"}, "commit"=>"Save", "tags"=>"fruit, yellow, food"}
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mTag Load (0.1ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."name" = 'fruit') LIMIT 1[0m
+  [4;36;1mTag Create (0.2ms)[0m   [0;1mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('fruit', '2010-09-20 20:48:11', '2010-09-20 20:48:11')[0m
+  [4;35;1mTag Load (0.1ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."name" = 'yellow') LIMIT 1[0m
+  [4;36;1mTag Create (0.1ms)[0m   [0;1mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('yellow', '2010-09-20 20:48:11', '2010-09-20 20:48:11')[0m
+  [4;35;1mTag Load (0.1ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."name" = 'food') LIMIT 1[0m
+  [4;36;1mTag Create (0.1ms)[0m   [0;1mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('food', '2010-09-20 20:48:11', '2010-09-20 20:48:11')[0m
+  [4;35;1mArticle Create (0.1ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 20:48:11', 'Bananas', 'An article all about bananas', '2010-09-20 20:48:11')[0m
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2010-09-20 21:48:11) [POST]
+  Parameters: {"article"=>{"title"=>"Bananas", "body"=>"An article all about bananas"}, "commit"=>"Save", "tags"=>"fruit, yellow, food"}
+  [4;36;1mArticle Delete all (0.3ms)[0m   [0;1mDELETE FROM "articles" WHERE 1=1[0m
+  [4;35;1mTag Create (0.2ms)[0m   [0mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('cheese', '2010-09-20 20:48:11', '2010-09-20 20:48:11')[0m
+  [4;36;1mTag Create (0.1ms)[0m   [0;1mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('marmite', '2010-09-20 20:48:11', '2010-09-20 20:48:11')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-20 21:48:11) [GET]
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.1ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 3ms (View: 2, DB: 2) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /articles/new with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2010-09-20 21:48:11) [GET]
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" [0m
+Rendering template within layouts/application
+Rendering articles/new
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/articles/new]
+REQUESTING PAGE: POST /articles with {"article"=>{"body"=>"An article all about bananas", "title"=>"Bananas"}, "commit"=>"Save", "tags"=>"cheese, marmite"} and HTTP headers {"HTTP_REFERER"=>"/articles/new"}
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2010-09-20 21:48:11) [POST]
+  Parameters: {"article"=>{"title"=>"Bananas", "body"=>"An article all about bananas"}, "commit"=>"Save", "tags"=>"cheese, marmite"}
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mTag Load (0.1ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."name" = 'cheese') LIMIT 1[0m
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."name" = 'marmite') LIMIT 1[0m
+  [4;35;1mArticle Create (0.1ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 20:48:11', 'Bananas', 'An article all about bananas', '2010-09-20 20:48:11')[0m
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2010-09-20 21:48:11) [POST]
+  Parameters: {"article"=>{"title"=>"Bananas", "body"=>"An article all about bananas"}, "commit"=>"Save", "tags"=>"cheese, marmite"}
+  [4;36;1mArticle Create (0.3ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 20:48:11', 'Big Bananas', 'Big bananas are good for you', '2010-09-20 20:48:11')[0m
+  [4;35;1mTag Create (0.1ms)[0m   [0mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('cheese', '2010-09-20 20:48:11', '2010-09-20 20:48:11')[0m
+  [4;36;1mTag Create (0.1ms)[0m   [0;1mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES(' marmite', '2010-09-20 20:48:11', '2010-09-20 20:48:11')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-20 21:48:11) [GET]
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.1ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:48:11) [GET]
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."name" = 'ferrari') LIMIT 1[0m
+  [4;36;1mTag Create (0.3ms)[0m   [0;1mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('ferrari', '2010-09-20 20:48:11', '2010-09-20 20:48:11')[0m
+  [4;35;1mTag Load (0.1ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."name" = 'aston martin') LIMIT 1[0m
+  [4;36;1mTag Create (0.1ms)[0m   [0;1mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('aston martin', '2010-09-20 20:48:11', '2010-09-20 20:48:11')[0m
+  [4;35;1mArticle Create (0.1ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 20:48:11', 'Fast cars', NULL, '2010-09-20 20:48:11')[0m
+  [4;36;1mArticle Create (0.4ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 20:48:38', 'Bridges, Skyscrapers', NULL, '2010-09-20 20:48:38')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-20 21:48:38) [GET]
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (6.4ms)
+Completed in 20ms (View: 17, DB: 1) | 200 OK [http://www.example.com/]
+  [4;36;1mArticle Delete all (0.3ms)[0m   [0;1mDELETE FROM "articles" WHERE 1=1[0m
+  [4;35;1mTag Delete all (0.1ms)[0m   [0mDELETE FROM "tags" WHERE 1=1[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-20 21:48:38) [GET]
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 3ms (View: 1, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /articles/new with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2010-09-20 21:48:38) [GET]
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" [0m
+Rendering template within layouts/application
+Rendering articles/new
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/articles/new]
+REQUESTING PAGE: POST /articles with {"article"=>{"body"=>"An article all about bananas", "title"=>"Bananas"}, "commit"=>"Save", "tags"=>"fruit, yellow, food"} and HTTP headers {"HTTP_REFERER"=>"/articles/new"}
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2010-09-20 21:48:38) [POST]
+  Parameters: {"article"=>{"title"=>"Bananas", "body"=>"An article all about bananas"}, "commit"=>"Save", "tags"=>"fruit, yellow, food"}
+  [4;35;1mTag Load (0.1ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."name" = 'fruit') LIMIT 1[0m
+  [4;35;1mTag Create (0.2ms)[0m   [0mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('fruit', '2010-09-20 20:48:38', '2010-09-20 20:48:38')[0m
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."name" = 'yellow') LIMIT 1[0m
+  [4;35;1mTag Create (0.1ms)[0m   [0mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('yellow', '2010-09-20 20:48:38', '2010-09-20 20:48:38')[0m
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."name" = 'food') LIMIT 1[0m
+  [4;35;1mTag Create (0.2ms)[0m   [0mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('food', '2010-09-20 20:48:38', '2010-09-20 20:48:38')[0m
+  [4;36;1mArticle Create (0.2ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 20:48:38', 'Bananas', 'An article all about bananas', '2010-09-20 20:48:38')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "articles_tags" ("tag_id", "article_id") VALUES (1, 1)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "articles_tags" ("tag_id", "article_id") VALUES (2, 1)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "articles_tags" ("tag_id", "article_id") VALUES (3, 1)[0m
+Redirected to http://www.example.com/articles/1
+Completed in 20ms (DB: 1) | 302 Found [http://www.example.com/articles]
+REQUESTING PAGE: GET http://www.example.com/articles/1 with {} and HTTP headers {"HTTP_REFERER"=>"/articles"}
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-20 21:48:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (3.5ms)
+Completed in 10ms (View: 6, DB: 1) | 200 OK [http://www.example.com/articles/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "tags" [0m
+  [4;36;1mArticle Delete all (0.2ms)[0m   [0;1mDELETE FROM "articles" WHERE 1=1[0m
+  [4;35;1mTag Create (0.2ms)[0m   [0mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('cheese', '2010-09-20 20:48:38', '2010-09-20 20:48:38')[0m
+  [4;36;1mTag Create (0.1ms)[0m   [0;1mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('marmite', '2010-09-20 20:48:38', '2010-09-20 20:48:38')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-20 21:48:38) [GET]
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.1ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /articles/new with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2010-09-20 21:48:38) [GET]
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" [0m
+Rendering template within layouts/application
+Rendering articles/new
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/articles/new]
+REQUESTING PAGE: POST /articles with {"article"=>{"body"=>"An article all about bananas", "title"=>"Bananas"}, "commit"=>"Save", "tags"=>"cheese, marmite"} and HTTP headers {"HTTP_REFERER"=>"/articles/new"}
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2010-09-20 21:48:38) [POST]
+  Parameters: {"article"=>{"title"=>"Bananas", "body"=>"An article all about bananas"}, "commit"=>"Save", "tags"=>"cheese, marmite"}
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mTag Load (0.1ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."name" = 'cheese') LIMIT 1[0m
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."name" = 'marmite') LIMIT 1[0m
+  [4;35;1mArticle Create (0.1ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 20:48:38', 'Bananas', 'An article all about bananas', '2010-09-20 20:48:38')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "articles_tags" ("tag_id", "article_id") VALUES (1, 1)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "articles_tags" ("tag_id", "article_id") VALUES (2, 1)[0m
+Redirected to http://www.example.com/articles/1
+Completed in 7ms (DB: 1) | 302 Found [http://www.example.com/articles]
+REQUESTING PAGE: GET http://www.example.com/articles/1 with {} and HTTP headers {"HTTP_REFERER"=>"/articles"}
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-20 21:48:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.9ms)
+Completed in 7ms (View: 5, DB: 1) | 200 OK [http://www.example.com/articles/1]
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "tags" [0m
+  [4;35;1mArticle Create (0.4ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 20:48:39', 'Big Bananas', 'Big bananas are good for you', '2010-09-20 20:48:39')[0m
+  [4;36;1mTag Create (0.2ms)[0m   [0;1mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('cheese', '2010-09-20 20:48:39', '2010-09-20 20:48:39')[0m
+  [4;35;1mTag Create (0.1ms)[0m   [0mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES(' marmite', '2010-09-20 20:48:39', '2010-09-20 20:48:39')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-20 21:48:39) [GET]
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.2ms)
+Completed in 6ms (View: 4, DB: 1) | 200 OK [http://www.example.com/]
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."title" = 'Big Bananas') LIMIT 1[0m
+REQUESTING PAGE: GET /articles/1/edit with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2010-09-20 21:48:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering articles/edit
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Completed in 8ms (View: 6, DB: 1) | 200 OK [http://www.example.com/articles/1/edit]
+REQUESTING PAGE: POST /articles/1 with {"article"=>{"body"=>"Big bananas are good for you", "title"=>"Massive Bananas"}, "commit"=>"Update", "_method"=>"put", "tags"=>""} and HTTP headers {"HTTP_REFERER"=>"/articles/1/edit"}
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2010-09-20 21:48:39) [PUT]
+  Parameters: {"article"=>{"title"=>"Massive Bananas", "body"=>"Big bananas are good for you"}, "commit"=>"Update", "id"=>"1", "tags"=>""}
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.1ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+  [4;35;1mTag Load (0.1ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+  [4;36;1mArticle Update (0.1ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2010-09-20 20:48:39', "title" = 'Massive Bananas' WHERE "id" = 1[0m
+Redirected to http://www.example.com/articles/1
+Completed in 5ms (DB: 1) | 302 Found [http://www.example.com/articles/1]
+REQUESTING PAGE: GET http://www.example.com/articles/1 with {} and HTTP headers {"HTTP_REFERER"=>"/articles/1"}
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-20 21:48:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.1ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;35;1mTag Load (0.1ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.3ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://www.example.com/articles/1]
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."title" = 'Massive Bananas') [0m
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."title" = 'Big Bananas') [0m
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."name" = 'ferrari') LIMIT 1[0m
+  [4;35;1mTag Create (0.3ms)[0m   [0mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('ferrari', '2010-09-20 20:48:39', '2010-09-20 20:48:39')[0m
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."name" = 'aston martin') LIMIT 1[0m
+  [4;35;1mTag Create (0.1ms)[0m   [0mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('aston martin', '2010-09-20 20:48:39', '2010-09-20 20:48:39')[0m
+  [4;36;1mArticle Create (0.1ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 20:48:39', 'Fast cars', NULL, '2010-09-20 20:48:39')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "articles_tags" ("tag_id", "article_id") VALUES (1, 1)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "articles_tags" ("tag_id", "article_id") VALUES (2, 1)[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."name" = 'ferrari') LIMIT 1[0m
+  [4;36;1mArticle Create (0.1ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 20:48:39', 'Italian cars', NULL, '2010-09-20 20:48:39')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "articles_tags" ("tag_id", "article_id") VALUES (1, 2)[0m
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."name" = 'skoda') LIMIT 1[0m
+  [4;35;1mTag Create (0.1ms)[0m   [0mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('skoda', '2010-09-20 20:48:39', '2010-09-20 20:48:39')[0m
+  [4;36;1mArticle Create (0.1ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 20:48:39', 'Slow cars', NULL, '2010-09-20 20:48:39')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "articles_tags" ("tag_id", "article_id") VALUES (3, 3)[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-20 21:48:39) [GET]
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.9ms)
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (2.4ms)
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 3 ) [0m
+Rendered articles/_article (2.5ms)
+Completed in 12ms (View: 10, DB: 3) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /tags/1 with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-09-20 21:48:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Create (0.5ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 20:49:16', 'Bridges, Skyscrapers', NULL, '2010-09-20 20:49:16')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-20 21:49:16) [GET]
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (5.8ms)
+Completed in 20ms (View: 16, DB: 1) | 200 OK [http://www.example.com/]
+  [4;36;1mArticle Delete all (0.2ms)[0m   [0;1mDELETE FROM "articles" WHERE 1=1[0m
+  [4;35;1mTag Delete all (0.1ms)[0m   [0mDELETE FROM "tags" WHERE 1=1[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-20 21:49:16) [GET]
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /articles/new with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2010-09-20 21:49:16) [GET]
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" [0m
+Rendering template within layouts/application
+Rendering articles/new
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/articles/new]
+REQUESTING PAGE: POST /articles with {"article"=>{"body"=>"An article all about bananas", "title"=>"Bananas"}, "commit"=>"Save", "tags"=>"fruit, yellow, food"} and HTTP headers {"HTTP_REFERER"=>"/articles/new"}
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2010-09-20 21:49:16) [POST]
+  Parameters: {"article"=>{"title"=>"Bananas", "body"=>"An article all about bananas"}, "commit"=>"Save", "tags"=>"fruit, yellow, food"}
+  [4;35;1mTag Load (0.1ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."name" = 'fruit') LIMIT 1[0m
+  [4;35;1mTag Create (0.2ms)[0m   [0mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('fruit', '2010-09-20 20:49:16', '2010-09-20 20:49:16')[0m
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."name" = 'yellow') LIMIT 1[0m
+  [4;35;1mTag Create (0.1ms)[0m   [0mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('yellow', '2010-09-20 20:49:16', '2010-09-20 20:49:16')[0m
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."name" = 'food') LIMIT 1[0m
+  [4;35;1mTag Create (0.1ms)[0m   [0mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('food', '2010-09-20 20:49:16', '2010-09-20 20:49:16')[0m
+  [4;36;1mArticle Create (0.2ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 20:49:16', 'Bananas', 'An article all about bananas', '2010-09-20 20:49:16')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "articles_tags" ("tag_id", "article_id") VALUES (1, 1)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "articles_tags" ("tag_id", "article_id") VALUES (2, 1)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "articles_tags" ("tag_id", "article_id") VALUES (3, 1)[0m
+Redirected to http://www.example.com/articles/1
+Completed in 14ms (DB: 1) | 302 Found [http://www.example.com/articles]
+REQUESTING PAGE: GET http://www.example.com/articles/1 with {} and HTTP headers {"HTTP_REFERER"=>"/articles"}
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-20 21:49:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (3.2ms)
+Completed in 7ms (View: 5, DB: 1) | 200 OK [http://www.example.com/articles/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "tags" [0m
+  [4;36;1mArticle Delete all (0.2ms)[0m   [0;1mDELETE FROM "articles" WHERE 1=1[0m
+  [4;35;1mTag Create (0.2ms)[0m   [0mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('cheese', '2010-09-20 20:49:16', '2010-09-20 20:49:16')[0m
+  [4;36;1mTag Create (0.1ms)[0m   [0;1mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('marmite', '2010-09-20 20:49:16', '2010-09-20 20:49:16')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-20 21:49:16) [GET]
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.1ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /articles/new with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2010-09-20 21:49:16) [GET]
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" [0m
+Rendering template within layouts/application
+Rendering articles/new
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/articles/new]
+REQUESTING PAGE: POST /articles with {"article"=>{"body"=>"An article all about bananas", "title"=>"Bananas"}, "commit"=>"Save", "tags"=>"cheese, marmite"} and HTTP headers {"HTTP_REFERER"=>"/articles/new"}
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2010-09-20 21:49:16) [POST]
+  Parameters: {"article"=>{"title"=>"Bananas", "body"=>"An article all about bananas"}, "commit"=>"Save", "tags"=>"cheese, marmite"}
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mTag Load (0.1ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."name" = 'cheese') LIMIT 1[0m
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."name" = 'marmite') LIMIT 1[0m
+  [4;35;1mArticle Create (0.1ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 20:49:16', 'Bananas', 'An article all about bananas', '2010-09-20 20:49:16')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "articles_tags" ("tag_id", "article_id") VALUES (1, 1)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "articles_tags" ("tag_id", "article_id") VALUES (2, 1)[0m
+Redirected to http://www.example.com/articles/1
+Completed in 7ms (DB: 1) | 302 Found [http://www.example.com/articles]
+REQUESTING PAGE: GET http://www.example.com/articles/1 with {} and HTTP headers {"HTTP_REFERER"=>"/articles"}
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-20 21:49:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (3.0ms)
+Completed in 7ms (View: 5, DB: 1) | 200 OK [http://www.example.com/articles/1]
+  [4;35;1mTag Load (1.3ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "tags" [0m
+  [4;35;1mArticle Create (0.4ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 20:49:16', 'Big Bananas', 'Big bananas are good for you', '2010-09-20 20:49:16')[0m
+  [4;36;1mTag Create (0.1ms)[0m   [0;1mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('cheese', '2010-09-20 20:49:16', '2010-09-20 20:49:16')[0m
+  [4;35;1mTag Create (0.1ms)[0m   [0mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES(' marmite', '2010-09-20 20:49:16', '2010-09-20 20:49:16')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-20 21:49:16) [GET]
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.3ms)
+Completed in 6ms (View: 4, DB: 3) | 200 OK [http://www.example.com/]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."title" = 'Big Bananas') LIMIT 1[0m
+REQUESTING PAGE: GET /articles/1/edit with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2010-09-20 21:49:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering articles/edit
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Completed in 8ms (View: 6, DB: 1) | 200 OK [http://www.example.com/articles/1/edit]
+REQUESTING PAGE: POST /articles/1 with {"article"=>{"body"=>"Big bananas are good for you", "title"=>"Massive Bananas"}, "commit"=>"Update", "_method"=>"put", "tags"=>""} and HTTP headers {"HTTP_REFERER"=>"/articles/1/edit"}
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2010-09-20 21:49:16) [PUT]
+  Parameters: {"article"=>{"title"=>"Massive Bananas", "body"=>"Big bananas are good for you"}, "commit"=>"Update", "id"=>"1", "tags"=>""}
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.1ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+  [4;35;1mTag Load (0.1ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+  [4;36;1mArticle Update (0.1ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2010-09-20 20:49:16', "title" = 'Massive Bananas' WHERE "id" = 1[0m
+Redirected to http://www.example.com/articles/1
+Completed in 5ms (DB: 1) | 302 Found [http://www.example.com/articles/1]
+REQUESTING PAGE: GET http://www.example.com/articles/1 with {} and HTTP headers {"HTTP_REFERER"=>"/articles/1"}
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-20 21:49:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;35;1mTag Load (0.1ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.8ms)
+Completed in 7ms (View: 5, DB: 1) | 200 OK [http://www.example.com/articles/1]
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."title" = 'Massive Bananas') [0m
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."title" = 'Big Bananas') [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."name" = 'ferrari') LIMIT 1[0m
+  [4;35;1mTag Create (0.3ms)[0m   [0mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('ferrari', '2010-09-20 20:49:16', '2010-09-20 20:49:16')[0m
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."name" = 'aston martin') LIMIT 1[0m
+  [4;35;1mTag Create (0.1ms)[0m   [0mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('aston martin', '2010-09-20 20:49:16', '2010-09-20 20:49:16')[0m
+  [4;36;1mArticle Create (0.1ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 20:49:16', 'Fast cars', NULL, '2010-09-20 20:49:16')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "articles_tags" ("tag_id", "article_id") VALUES (1, 1)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "articles_tags" ("tag_id", "article_id") VALUES (2, 1)[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."name" = 'ferrari') LIMIT 1[0m
+  [4;36;1mArticle Create (0.1ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 20:49:16', 'Italian cars', NULL, '2010-09-20 20:49:16')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "articles_tags" ("tag_id", "article_id") VALUES (1, 2)[0m
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."name" = 'skoda') LIMIT 1[0m
+  [4;35;1mTag Create (0.1ms)[0m   [0mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('skoda', '2010-09-20 20:49:16', '2010-09-20 20:49:16')[0m
+  [4;36;1mArticle Create (0.1ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 20:49:16', 'Slow cars', NULL, '2010-09-20 20:49:16')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "articles_tags" ("tag_id", "article_id") VALUES (3, 3)[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-20 21:49:16) [GET]
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.9ms)
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (2.4ms)
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 3 ) [0m
+Rendered articles/_article (2.3ms)
+Completed in 12ms (View: 10, DB: 3) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /tags/1 with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing TagsController#show (for 127.0.0.1 at 2010-09-20 21:49:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering tags/show
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" INNER JOIN "articles_tags" ON "articles".id = "articles_tags".article_id WHERE ("articles_tags".tag_id = 1 ) [0m
+Completed in 9ms (View: 6, DB: 1) | 200 OK [http://www.example.com/tags/1]
+  [4;36;1mArticle Create (0.7ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-26 15:30:46', 'Bridges, Skyscrapers', NULL, '2010-09-26 15:30:46')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-26 16:30:46) [GET]
+  [4;35;1mTag Load (11.5ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (25.4ms)
+Completed in 69ms (View: 54, DB: 13) | 200 OK [http://www.example.com/]
+  [4;36;1mArticle Delete all (0.2ms)[0m   [0;1mDELETE FROM "articles" WHERE 1=1[0m
+  [4;35;1mTag Delete all (0.1ms)[0m   [0mDELETE FROM "tags" WHERE 1=1[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-26 16:30:46) [GET]
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /articles/new with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2010-09-26 16:30:46) [GET]
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" [0m
+Rendering template within layouts/application
+Rendering articles/new
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/articles/new]
+REQUESTING PAGE: POST /articles with {"article"=>{"body"=>"An article all about bananas", "title"=>"Bananas"}, "commit"=>"Save", "tags"=>"fruit, yellow, food"} and HTTP headers {"HTTP_REFERER"=>"/articles/new"}
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2010-09-26 16:30:46) [POST]
+  Parameters: {"article"=>{"title"=>"Bananas", "body"=>"An article all about bananas"}, "commit"=>"Save", "tags"=>"fruit, yellow, food"}
+  [4;35;1mTag Load (0.1ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."name" = 'fruit') LIMIT 1[0m
+  [4;35;1mTag Create (0.2ms)[0m   [0mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('fruit', '2010-09-26 15:30:46', '2010-09-26 15:30:46')[0m
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."name" = 'yellow') LIMIT 1[0m
+  [4;35;1mTag Create (0.1ms)[0m   [0mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('yellow', '2010-09-26 15:30:46', '2010-09-26 15:30:46')[0m
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."name" = 'food') LIMIT 1[0m
+  [4;35;1mTag Create (0.1ms)[0m   [0mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('food', '2010-09-26 15:30:46', '2010-09-26 15:30:46')[0m
+  [4;36;1mArticle Create (0.2ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-26 15:30:46', 'Bananas', 'An article all about bananas', '2010-09-26 15:30:46')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO "articles_tags" ("tag_id", "article_id") VALUES (1, 1)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "articles_tags" ("tag_id", "article_id") VALUES (2, 1)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "articles_tags" ("tag_id", "article_id") VALUES (3, 1)[0m
+Redirected to http://www.example.com/articles/1
+Completed in 19ms (DB: 1) | 302 Found [http://www.example.com/articles]
+REQUESTING PAGE: GET http://www.example.com/articles/1 with {} and HTTP headers {"HTTP_REFERER"=>"/articles"}
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-26 16:30:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (3.8ms)
+Completed in 9ms (View: 7, DB: 1) | 200 OK [http://www.example.com/articles/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "articles" [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "tags" [0m
+  [4;36;1mArticle Delete all (0.3ms)[0m   [0;1mDELETE FROM "articles" WHERE 1=1[0m
+  [4;35;1mTag Create (0.4ms)[0m   [0mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('cheese', '2010-09-26 15:30:46', '2010-09-26 15:30:46')[0m
+  [4;36;1mTag Create (0.1ms)[0m   [0;1mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('marmite', '2010-09-26 15:30:46', '2010-09-26 15:30:46')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-26 16:30:46) [GET]
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.1ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 4ms (View: 2, DB: 2) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /articles/new with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2010-09-26 16:30:46) [GET]
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" [0m
+Rendering template within layouts/application
+Rendering articles/new
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://www.example.com/articles/new]
+REQUESTING PAGE: POST /articles with {"article"=>{"body"=>"An article all about bananas", "title"=>"Bananas"}, "commit"=>"Save", "tags"=>"cheese, marmite"} and HTTP headers {"HTTP_REFERER"=>"/articles/new"}
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2010-09-26 16:30:46) [POST]
+  Parameters: {"article"=>{"title"=>"Bananas", "body"=>"An article all about bananas"}, "commit"=>"Save", "tags"=>"cheese, marmite"}
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."name" = 'cheese') LIMIT 1[0m
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."name" = 'marmite') LIMIT 1[0m
+  [4;35;1mArticle Create (0.2ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-26 15:30:46', 'Bananas', 'An article all about bananas', '2010-09-26 15:30:46')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO "articles_tags" ("tag_id", "article_id") VALUES (1, 1)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "articles_tags" ("tag_id", "article_id") VALUES (2, 1)[0m
+Redirected to http://www.example.com/articles/1
+Completed in 10ms (DB: 1) | 302 Found [http://www.example.com/articles]
+REQUESTING PAGE: GET http://www.example.com/articles/1 with {} and HTTP headers {"HTTP_REFERER"=>"/articles"}
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-26 16:30:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (5.1ms)
+Completed in 12ms (View: 10, DB: 1) | 200 OK [http://www.example.com/articles/1]
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "tags" [0m
+  [4;35;1mArticle Create (0.5ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-26 15:30:46', 'Big Bananas', 'Big bananas are good for you', '2010-09-26 15:30:46')[0m
+  [4;36;1mTag Create (0.3ms)[0m   [0;1mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('cheese', '2010-09-26 15:30:46', '2010-09-26 15:30:46')[0m
+  [4;35;1mTag Create (0.1ms)[0m   [0mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES(' marmite', '2010-09-26 15:30:46', '2010-09-26 15:30:46')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-26 16:30:46) [GET]
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.5ms)
+Completed in 6ms (View: 4, DB: 2) | 200 OK [http://www.example.com/]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."title" = 'Big Bananas') LIMIT 1[0m
+REQUESTING PAGE: GET /articles/1/edit with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2010-09-26 16:30:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering articles/edit
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Completed in 8ms (View: 6, DB: 1) | 200 OK [http://www.example.com/articles/1/edit]
+REQUESTING PAGE: POST /articles/1 with {"article"=>{"body"=>"Big bananas are good for you", "title"=>"Massive Bananas"}, "commit"=>"Update", "_method"=>"put", "tags"=>""} and HTTP headers {"HTTP_REFERER"=>"/articles/1/edit"}
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2010-09-26 16:30:47) [PUT]
+  Parameters: {"article"=>{"title"=>"Massive Bananas", "body"=>"Big bananas are good for you"}, "commit"=>"Update", "id"=>"1", "tags"=>""}
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.1ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+  [4;35;1mTag Load (0.1ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+  [4;36;1mArticle Update (0.1ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2010-09-26 15:30:47', "title" = 'Massive Bananas' WHERE "id" = 1[0m
+Redirected to http://www.example.com/articles/1
+Completed in 5ms (DB: 1) | 302 Found [http://www.example.com/articles/1]
+REQUESTING PAGE: GET http://www.example.com/articles/1 with {} and HTTP headers {"HTTP_REFERER"=>"/articles/1"}
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-26 16:30:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.1ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;35;1mTag Load (0.1ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.7ms)
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://www.example.com/articles/1]
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."title" = 'Massive Bananas') [0m
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."title" = 'Big Bananas') [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."name" = 'ferrari') LIMIT 1[0m
+  [4;35;1mTag Create (0.3ms)[0m   [0mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('ferrari', '2010-09-26 15:30:47', '2010-09-26 15:30:47')[0m
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."name" = 'aston martin') LIMIT 1[0m
+  [4;35;1mTag Create (0.1ms)[0m   [0mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('aston martin', '2010-09-26 15:30:47', '2010-09-26 15:30:47')[0m
+  [4;36;1mArticle Create (0.1ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-26 15:30:47', 'Fast cars', NULL, '2010-09-26 15:30:47')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO "articles_tags" ("tag_id", "article_id") VALUES (1, 1)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "articles_tags" ("tag_id", "article_id") VALUES (2, 1)[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."name" = 'ferrari') LIMIT 1[0m
+  [4;36;1mArticle Create (0.1ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-26 15:30:47', 'Italian cars', NULL, '2010-09-26 15:30:47')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "articles_tags" ("tag_id", "article_id") VALUES (1, 2)[0m
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."name" = 'skoda') LIMIT 1[0m
+  [4;35;1mTag Create (0.1ms)[0m   [0mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('skoda', '2010-09-26 15:30:47', '2010-09-26 15:30:47')[0m
+  [4;36;1mArticle Create (0.1ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-26 15:30:47', 'Slow cars', NULL, '2010-09-26 15:30:47')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "articles_tags" ("tag_id", "article_id") VALUES (3, 3)[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-26 16:30:47) [GET]
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.8ms)
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (3.0ms)
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 3 ) [0m
+Rendered articles/_article (2.6ms)
+Completed in 13ms (View: 10, DB: 3) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /tags/1 with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing TagsController#show (for 127.0.0.1 at 2010-09-26 16:30:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering tags/show
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" INNER JOIN "articles_tags" ON "articles".id = "articles_tags".article_id WHERE ("articles_tags".tag_id = 1 ) [0m
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://www.example.com/tags/1]

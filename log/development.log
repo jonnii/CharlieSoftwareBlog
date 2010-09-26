@@ -1,0 +1,3220 @@
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateArticles (20100920191112)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "body" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100920191112')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("articles")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("articles")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "body" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("schema_migrations")[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100920191112')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateArticles (20100920191112)
+Migrating to CreateTags (20100920195540)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "tags" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100920195540')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("articles")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("tags")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("articles")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("tags")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "body" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mCREATE TABLE "tags" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100920195540')[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100920191112')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateArticles (20100920191112)
+Migrating to CreateTags (20100920195540)
+Migrating to CreateArticleTags (20100920203301)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateArticles (20100920191112)
+Migrating to CreateTags (20100920195540)
+Migrating to CreateArticlesTags (20100920203444)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "articles_tags" ("article_id" integer, "tag_id" integer) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100920203444')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("articles")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("articles_tags")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tags")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("articles")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("articles_tags")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tags")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "body" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mCREATE TABLE "articles_tags" ("article_id" integer, "tag_id" integer) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mCREATE TABLE "tags" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("schema_migrations")[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100920203444')[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100920191112')[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100920195540')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateArticlesTags (20100920203444)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mDROP TABLE "articles_tags"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100920203444'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("articles")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("tags")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("articles")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("tags")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "body" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mCREATE TABLE "tags" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100920195540')[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100920191112')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateArticles (20100920191112)
+Migrating to CreateTags (20100920195540)
+Migrating to CreateArticlesTags (20100920203444)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "articles_tags" ("article_id" integer, "tag_id" integer) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100920203444')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("articles")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("articles_tags")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tags")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "body" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mCREATE TABLE "articles_tags" ("article_id" integer, "tag_id" integer) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mCREATE TABLE "tags" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.2ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100920203444')[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100920191112')[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100920195540')[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-20 21:41:08) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #74 of app/views/layouts/application.html.erb:
+71:           <h2>About Charlie</h2>
+72:           <p>I'm a London based developer currently working for Rule Financial. I spent most of my programming time using C# but I also occasionally play with Ruby on Rails, which I used to build this blog.</p>
+73:           <h2>Tags</h2>
+74:             <% @tags.each do |tag|%>
+75:                 <%= link_to tag.name, tag_path(tag.id), :class => "tag" %>
+76:             <% end%>
+77:           <h2>Administration</h2>
+
+    app/views/layouts/application.html.erb:74
+
+Rendered rescues/_trace (46.0ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-20 21:43:55) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #74 of app/views/layouts/application.html.erb:
+71:           <h2>About Charlie</h2>
+72:           <p>I'm a London based developer currently working for Rule Financial. I spent most of my programming time using C# but I also occasionally play with Ruby on Rails, which I used to build this blog.</p>
+73:           <h2>Tags</h2>
+74:             <% @tags.each do |tag|%>
+75:                 <%= link_to tag.name, tag_path(tag.id), :class => "tag" %>
+76:             <% end%>
+77:           <h2>Administration</h2>
+
+    app/views/layouts/application.html.erb:74
+
+Rendered rescues/_trace (46.1ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-20 21:43:57) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #74 of app/views/layouts/application.html.erb:
+71:           <h2>About Charlie</h2>
+72:           <p>I'm a London based developer currently working for Rule Financial. I spent most of my programming time using C# but I also occasionally play with Ruby on Rails, which I used to build this blog.</p>
+73:           <h2>Tags</h2>
+74:             <% @tags.each do |tag|%>
+75:                 <%= link_to tag.name, tag_path(tag.id), :class => "tag" %>
+76:             <% end%>
+77:           <h2>Administration</h2>
+
+    app/views/layouts/application.html.erb:74
+
+Rendered rescues/_trace (41.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-20 21:43:59) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #74 of app/views/layouts/application.html.erb:
+71:           <h2>About Charlie</h2>
+72:           <p>I'm a London based developer currently working for Rule Financial. I spent most of my programming time using C# but I also occasionally play with Ruby on Rails, which I used to build this blog.</p>
+73:           <h2>Tags</h2>
+74:             <% @tags.each do |tag|%>
+75:                 <%= link_to tag.name, tag_path(tag.id), :class => "tag" %>
+76:             <% end%>
+77:           <h2>Administration</h2>
+
+    app/views/layouts/application.html.erb:74
+
+Rendered rescues/_trace (118.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-20 21:44:24) [GET]
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 17ms (View: 8, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:44:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/styles.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:44:24) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/markitup/skins/markitup/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:44:24) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/markitup/sets/default/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:44:24) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jQueryOpenIdPlugin/openid.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:44:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery.notifyBar.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:44:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.8.5.custom.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:44:24) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jQueryOpenIdPlugin/images/aolW.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:44:24) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.8.5.custom.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:44:24) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/markitup/jquery.markitup.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:44:24) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/markitup/sets/default/set.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:44:24) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jQueryOpenIdPlugin/jquery.openid.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:44:24) [GET]
+
+ActionController::RoutingError (No route matches "/images/logo.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:44:24) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jQueryOpenIdPlugin/images/openidW.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:44:24) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jQueryOpenIdPlugin/images/googleW.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:44:24) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jQueryOpenIdPlugin/images/yahooW.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:44:24) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jQueryOpenIdPlugin/images/myopenid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:44:24) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jQueryOpenIdPlugin/images/claimid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:44:25) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jQueryOpenIdPlugin/images/technorati.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:44:25) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jQueryOpenIdPlugin/images/wordpress.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:44:25) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jQueryOpenIdPlugin/images/blogger.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:44:25) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jQueryOpenIdPlugin/images/livejournal.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:44:25) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jQueryOpenIdPlugin/images/flickr.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:44:25) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jQueryOpenIdPlugin/images/vidoop.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:44:25) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jQueryOpenIdPlugin/images/verisign.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:44:25) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.8.5.custom.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:44:25) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/markitup/jquery.markitup.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:44:25) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/markitup/sets/default/set.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:44:25) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jQueryOpenIdPlugin/jquery.openid.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-20 21:47:52) [GET]
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 11ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:47:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2010-09-20 21:47:56) [GET]
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" [0m
+Rendering template within layouts/application
+Rendering articles/new
+Completed in 21ms (View: 12, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:47:56) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("articles")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("articles_tags")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tags")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "body" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mCREATE TABLE "articles_tags" ("article_id" integer, "tag_id" integer) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mCREATE TABLE "tags" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("schema_migrations")[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100920203444')[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100920191112')[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100920195540')[0m
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2010-09-20 21:55:50) [POST]
+  Parameters: {"article"=>{"body"=>"\t\t<p>I was drawn to an <a title=\"Override .svc file\" href=\"http://stackoverflow.com/questions/3662555/how-can-i-override-a-svc-file-in-my-routing-table\">interesting question on StackOverflow</a> recently about how to override a request for a non-existent .svc request using routing.</p>  <p>One useful feature of routing in ASP.NET is that requests for files that exist on disk are ignored by routing. Thus requests for static files and for .aspx and .svc files don’t run through the routing system.</p>  <p>In this particular scenario, the developer wanted to replace an existing .svc service with a call to an ASP.NET MVC controller. So he deletes the .svc file and adds the following route:</p>  <div class=\"dropshadow code\">   <div class=\"innerbox\">     <pre class=\"csharpcode\">routes.MapRoute(\r\n  <span class=\"str\">\"UpdateItemApi\"</span>,\r\n  <span class=\"str\">\"Services/api.svc/UpdateItem\"</span>,\r\n  <span class=\"kwrd\">new</span> { controller = <span class=\"str\">\"LegacyApi\"</span>, action = <span class=\"str\">\"UpdateItem\"</span> }\r\n);</pre>\r\n\r\n  </div>\r\n</div>\r\n\r\n<p class=\"clear\">Since <em>api.svc</em> is not a physical file on disk, at first glance, this should work just fine. But I tried it out myself with a brand new project, and sure enough, it doesn’t work.</p>\r\n\r\n<p>Baffling!</p>\r\n\r\n<p>So I started digging into it. First, I looked in event viewer and saw the following exception.</p>\r\n\r\n<p><em><code><em>System.ServiceModel.EndpointNotFoundException: The service '/Services/api.svc' does not exist.</em></code></em></p>\r\n\r\n<p>Ok, so there’s probably something special about the .svc file extension. So I opened up the machine web.config file located here on my machine:</p>\r\n<code>\r\n  <p><em>C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\Config\\web.config</em></p>\r\n</code>\r\n\r\n<p>And I found this interesting entry within the <code>buildProviders</code> section.</p>\r\n\r\n<div class=\"dropshadow code\">\r\n  <div class=\"innerbox\">\r\n\r\n    <pre class=\"csharpcode\"><span class=\"kwrd\">&lt;</span><span class=\"html\">add</span> <span class=\"attr\">extension</span><span class=\"kwrd\">=\"<strong>.svc</strong>\"</span> \r\n  <span class=\"attr\">type</span><span class=\"kwrd\">=\"System.ServiceModel.Activation.ServiceBuildProvider, \r\n  System.ServiceModel.Activation,\r\n  Version=4.0.0.0, Culture=neutral, \r\n  PublicKeyToken=31bf3856ad364e35\"</span> \r\n<span class=\"kwrd\">/&gt;</span></pre>\r\n  </div>\r\n</div>\r\n\r\n<p class=\"clear\">Ah! There’s a default build provider registered for the .svc extension. And as we all know, build providers allow for runtime compilation of requests for ASP.NET files and occur very early in response to a request.</p>\r\n\r\n<p>The fix I came up with was to simply remove this registration within my application’s web.config file.</p>\r\n\r\n<div class=\"dropshadow code\">\r\n  <div class=\"innerbox\">\r\n    <pre class=\"csharpcode\">  <span class=\"kwrd\">&lt;</span><span class=\"html\">system.web</span><span class=\"kwrd\">&gt;</span>\r\n    <span class=\"kwrd\">&lt;</span><span class=\"html\">compilation</span> <span class=\"attr\">debug</span><span class=\"kwrd\">=\"true\"</span> <span class=\"attr\">targetFramework</span><span class=\"kwrd\">=\"4.0\"</span><span class=\"kwrd\">&gt;</span>\r\n\r\n      <span class=\"kwrd\">&lt;</span><span class=\"html\">buildProviders</span><span class=\"kwrd\">&gt;</span>\r\n        <strong><span class=\"kwrd\">&lt;</span><span class=\"html\">remove</span> <span class=\"attr\">extension</span><span class=\"kwrd\">=\".svc\"</span><span class=\"kwrd\">/&gt;</span></strong>            \r\n      <span class=\"kwrd\">&lt;/</span><span class=\"html\">buildProviders</span><span class=\"kwrd\">&gt;</span>\r\n    ...</pre>\r\n  </div>\r\n\r\n</div>\r\n\r\n<p class=\"clear\">Doing that now allowed my route with the <em>.svc</em> extension to work. Of course, if I have other .svc services that should continue to work, I’ve pretty much disabled all of them by doing this. However, if those services are in a common subfolder (for example, a folder named <em>services</em>), we may be able to get around this by adding the build provider in a web.config file within that common subfolder.</p>\r\n\r\n<p>In any case, I thought the question was interesting as it demonstrated the delicate interplay between routing and build providers.</p>\r\n\r\n", "title"=>"Overriding a .svc Request With Routing"}, "commit"=>"Save", "authenticity_token"=>"GLl6ZHKyNiwoMX6s9WJ2jW7M5EdkV83WeSIfi3lvQe8=", "tags"=>"asp.net mvc, c#"}
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."name" = 'asp.net mvc') LIMIT 1[0m
+  [4;36;1mTag Create (0.5ms)[0m   [0;1mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('asp.net mvc', '2010-09-20 20:55:50', '2010-09-20 20:55:50')[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."name" = 'c#') LIMIT 1[0m
+  [4;36;1mTag Create (0.3ms)[0m   [0;1mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('c#', '2010-09-20 20:55:50', '2010-09-20 20:55:50')[0m
+  [4;35;1mArticle Create (0.4ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 20:55:50', 'Overriding a .svc Request With Routing', '		<p>I was drawn to an <a title="Override .svc file" href="http://stackoverflow.com/questions/3662555/how-can-i-override-a-svc-file-in-my-routing-table">interesting question on StackOverflow</a> recently about how to override a request for a non-existent .svc request using routing.</p> <p>One useful feature of routing in ASP.NET is that requests for files that exist on disk are ignored by routing. Thus requests for static files and for .aspx and .svc files don’t run through the routing system.</p> <p>In this particular scenario, the developer wanted to replace an existing .svc service with a call to an ASP.NET MVC controller. So he deletes the .svc file and adds the following route:</p> <div class="dropshadow code"> <div class="innerbox"> <pre class="csharpcode">routes.MapRoute(
+ <span class="str">"UpdateItemApi"</span>,
+ <span class="str">"Services/api.svc/UpdateItem"</span>,
+ <span class="kwrd">new</span> { controller = <span class="str">"LegacyApi"</span>, action = <span class="str">"UpdateItem"</span> }
+);</pre>
+
+ </div>
+</div>
+
+<p class="clear">Since <em>api.svc</em> is not a physical file on disk, at first glance, this should work just fine. But I tried it out myself with a brand new project, and sure enough, it doesn’t work.</p>
+
+<p>Baffling!</p>
+
+<p>So I started digging into it. First, I looked in event viewer and saw the following exception.</p>
+
+<p><em><code><em>System.ServiceModel.EndpointNotFoundException: The service ''/Services/api.svc'' does not exist.</em></code></em></p>
+
+<p>Ok, so there’s probably something special about the .svc file extension. So I opened up the machine web.config file located here on my machine:</p>
+<code>
+ <p><em>C:\Windows\Microsoft.NET\Framework\v4.0.30319\Config\web.config</em></p>
+</code>
+
+<p>And I found this interesting entry within the <code>buildProviders</code> section.</p>
+
+<div class="dropshadow code">
+ <div class="innerbox">
+
+ <pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">add</span> <span class="attr">extension</span><span class="kwrd">="<strong>.svc</strong>"</span> 
+ <span class="attr">type</span><span class="kwrd">="System.ServiceModel.Activation.ServiceBuildProvider, 
+ System.ServiceModel.Activation,
+ Version=4.0.0.0, Culture=neutral, 
+ PublicKeyToken=31bf3856ad364e35"</span> 
+<span class="kwrd">/&gt;</span></pre>
+ </div>
+</div>
+
+<p class="clear">Ah! There’s a default build provider registered for the .svc extension. And as we all know, build providers allow for runtime compilation of requests for ASP.NET files and occur very early in response to a request.</p>
+
+<p>The fix I came up with was to simply remove this registration within my application’s web.config file.</p>
+
+<div class="dropshadow code">
+ <div class="innerbox">
+ <pre class="csharpcode"> <span class="kwrd">&lt;</span><span class="html">system.web</span><span class="kwrd">&gt;</span>
+ <span class="kwrd">&lt;</span><span class="html">compilation</span> <span class="attr">debug</span><span class="kwrd">="true"</span> <span class="attr">targetFramework</span><span class="kwrd">="4.0"</span><span class="kwrd">&gt;</span>
+
+ <span class="kwrd">&lt;</span><span class="html">buildProviders</span><span class="kwrd">&gt;</span>
+ <strong><span class="kwrd">&lt;</span><span class="html">remove</span> <span class="attr">extension</span><span class="kwrd">=".svc"</span><span class="kwrd">/&gt;</span></strong> 
+ <span class="kwrd">&lt;/</span><span class="html">buildProviders</span><span class="kwrd">&gt;</span>
+ ...</pre>
+ </div>
+
+</div>
+
+<p class="clear">Doing that now allowed my route with the <em>.svc</em> extension to work. Of course, if I have other .svc services that should continue to work, I’ve pretty much disabled all of them by doing this. However, if those services are in a common subfolder (for example, a folder named <em>services</em>), we may be able to get around this by adding the build provider in a web.config file within that common subfolder.</p>
+
+<p>In any case, I thought the question was interesting as it demonstrated the delicate interplay between routing and build providers.</p>
+
+', '2010-09-20 20:55:50')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "articles_tags" ("tag_id", "article_id") VALUES (1, 1)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "articles_tags" ("tag_id", "article_id") VALUES (2, 1)[0m
+Redirected to http://localhost:3000/articles/1
+Completed in 37ms (DB: 2) | 302 Found [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-20 21:55:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (10.1ms)
+Completed in 40ms (View: 30, DB: 1) | 200 OK [http://localhost/articles/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:55:51) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:56:20) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_highlight-soft_75_cccccc_1x100.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:56:20) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-icons_222222_256x240.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-20 21:58:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (5.3ms)
+Completed in 25ms (View: 15, DB: 1) | 200 OK [http://localhost/articles/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:58:42) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-20 21:59:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (5.6ms)
+Completed in 18ms (View: 8, DB: 1) | 200 OK [http://localhost/articles/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:59:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-20 21:59:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (5.3ms)
+Completed in 18ms (View: 8, DB: 1) | 200 OK [http://localhost/articles/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 21:59:43) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2010-09-20 22:00:52) [GET]
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" [0m
+Rendering template within layouts/application
+Rendering articles/new
+Completed in 22ms (View: 13, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 22:00:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2010-09-20 22:01:41) [POST]
+  Parameters: {"article"=>{"body"=>"<p>\r\nI have something in common with Bill Gates and Larry Page:\r\n<p>\r\n<blockquote>\r\n<a href=\"http://www.sfgate.com/cgi-bin/article.cgi?file=/chronicle/archive/2000/12/31/BU178263.DTL\">Larry Page</a>: I have a weird setup in my office. I have one computer with three monitors: one flat-screen monitor and two regular ones. I have my browser on one screen, my schedule on another and my e-mail on another. I can drag things to different screens. I also have a projector. So if I&#39;m talking with everyone in my office, I can move stuff onto a big screen. \r\n\r\n<p>\r\n<a href=\"http://money.cnn.com/2006/03/30/news/newsmakers/gates_howiwork_fortune/\">Bill Gates</a>: If you look at this office, there isn&#39;t much paper in it. On my desk I have three screens, synchronized to form a single desktop. I can drag items from one screen to the next. Once you have that large display area, you&#39;ll never go back, because it has a direct impact on productivity. \r\n</p></blockquote>\r\n<p>\r\nWe&#39;re all members of the <b>three monitor club</b>.\r\n<p>\r\nIf you&#39;re only using one monitor, you are <a href=\"http://www.codinghorror.com/blog/archives/000012.html\">cheating yourself out of potential productivity</a>. Two monitors is a no-brainer. It&#39;s so fundamental that I included it as a part of the <a href=\"http://www.codinghorror.com/blog/archives/000666.html\">Programmer&#39;s Bill of Rights</a>.\r\n\r\n<p>\r\nBut you can do better.\r\n<p>\r\nAs good as two monitors is, <b>three monitors is <a href=\"http://www.codinghorror.com/blog/archives/000217.html\">even better</a></b>. With three monitors, there&#39;s a &quot;center&quot; to focus on. And 50% more display area. While there&#39;s certainly a <a href=\"http://blogs.vertigosoftware.com/jatwood/archive/2005/08/28/Multiple_Monitor_Madness.aspx\">point of diminishing returns for additional monitors</a>, I think three is the sweet spot. Even Edward Tufte, in <a href=\"http://www.codinghorror.com/blog/archives/000739.html\">the class I recently attended</a>, explicitly mentioned multiple monitors. I don&#39;t care how large a single display can be; you can <i>never</i> have enough desktop space.\r\n\r\n<p>\r\nNormally, to achieve three monitors, you have to either:\r\n<ol>\r\n<li>Buy an exotic video card that has more than 2 monitor connections.\r\n<li>Install a second video card.\r\n</li></li></ol>\r\n<p>\r\nThe first option is difficult because video cards with 3+ monitor connections are quite rare and usually expensive to boot. The second option, adding an additional video card, is easier, but not without some compatibility pitfalls of its own. But there&#39;s a third way that may be easiest of all. The Matrox <a href=\"http://www.matrox.com/graphics/en/gxm/products/th2go/home.php\">TripleHead2Go</a> is a neat little external device that provides three display support from a single video output. And it&#39;s now available in analog VGA and <a href=\"http://www.matrox.com/graphics/en/gxm/products/th2go/digital/home.php\">digital DVI editions</a>.\r\n<p>\r\n<img alt=\"matrox triplehead2go\" border=\"0\" class=\"at-xid-6a0120a85dcdae970b0128776fdccb970c\" height=\"318\" src=\"http://codinghorror.typepad.com/.a/6a0120a85dcdae970b0128776fdccb970c-pi\" width=\"425\" />\r\n\r\n<p>\r\nThere is one big caveat, however. In a modern three monitor config, the operating system sees each monitor as an independently controllable desktop. You can set resolution, size, and position of the monitors independently, and windows can intelligently size themselves to each desktop on each monitor.\r\n<p>\r\n<img alt=\"display properties, three monitors\" border=\"0\" height=\"77\" src=\"http://www.codinghorror.com/blog/images/display-properties-three-monitors.png\" width=\"240\" />\r\n<p>\r\nWith the matrox Triplehead2Go, <b>you&#39;re stuck with one mongo giant desktop that spans all your monitors</b>.\r\n<p>\r\n<img alt=\"display properties, one ultra-ultra-widescreen monitor\" border=\"0\" height=\"77\" src=\"http://www.codinghorror.com/blog/images/display-properties-triplehead.png\" width=\"240\" />\r\n<p>\r\nThis is a very old-school way of implementing multiple monitors. Before Windows was properly aware of multiple displays (think NT 4.0 era), the &quot;giant desktop&quot; was the only way you could get more than one display to work at all. And &quot;giant desktop&quot; has a <i>lot</i> of downsides:\r\n\r\n<p>\r\n<ol>\r\n<li>Maximizing a window becomes an exercise in futility.\r\n<li>You may not want your start menu on the leftmost monitor.\r\n<li>With two monitors, &quot;centered&quot; dialogs split the middle.\r\n</li></li></li></ol>\r\n<p>\r\nTo avoid the many problems of &quot;giant desktop&quot; fakery, you really need the OS to know that you&#39;re using two or three physical monitors, along with their resolutions, positions, and so forth.\r\n<p>\r\nBut the Triplehead2Go has its charms. You don&#39;t have to open your computer to install it, for one thing. And it works with computers that <i>can&#39;t</i> be opened, such as laptops. The Triplehead2Go abstracts away the multiple monitors at a hardware level and presents itself to the operating system as a giant ultra widescreen monitor.\r\n\r\n<p>\r\nThe Triplehead2Go also has one unexpected strength: <b>video games</b>. 3D acceleration across multiple video cards is tricky at best. And there&#39;s no good way to tell a game to use multiple monitors unless it&#39;s explicitly coded to do so. The Triplehead2Go device neatly sidesteps both of these limitations by externally simulating one ultra-ultra-wide monitor.\r\n<p>\r\nPCFormat UK experimented with the Triplehead2Go in a couple recent and upcoming game titles, such as <a href=\"http://blog.pcformat.co.uk/page/pcformat?entry=armed_assault_holy_trinity\">Armed Assault</a>:\r\n<p>\r\n\r\n<a href=\"http://blog.pcformat.co.uk/resources/pcformat/windetriptych3.jpg\"><img alt=\"Armed Assault on 3 monitors\" border=\"0\" class=\"at-xid-6a0120a85dcdae970b0128776fdce1970c\" height=\"187\" src=\"http://codinghorror.typepad.com/.a/6a0120a85dcdae970b0128776fdce1970c-pi\" width=\"700\" /></a>\r\n<p>\r\nArmed Assault also takes advantage of an optional <a href=\"http://www.naturalpoint.com/trackir/\">TrackIR head-tracking device</a>. The combination of a three-monitor setup with head tracking is incredibly immersive, and has to be seen to be believed. <a href=\"http://blog.pcformat.co.uk/resources/pcformat/trinity.wmv\">Watch the video and be amazed</a>.\r\n\r\n<p>\r\nThree-monitor setups are particularly strong in &quot;simulator&quot; type games where peripheral vision is crucial to gameplay. PC Format UK tried it with the recently released <a href=\"http://blog.pcformat.co.uk/page/pcformat/20060503\">GTR2 racing game</a>, and the results are impressive.\r\n<p>\r\n\r\n<a href=\"http://blog.pcformat.co.uk/resources/pcformat/monzacrashw.jpg\"><img alt=\"GTR2 on three monitors\" border=\"0\" class=\"at-xid-6a0120a85dcdae970b0128776fdcf6970c\" height=\"187\" src=\"http://codinghorror.typepad.com/.a/6a0120a85dcdae970b0128776fdcf6970c-pi\" width=\"700\" /></a>\r\n<p>\r\nThere are lots more screenshots of various games running in triple-head mode at <a href=\"http://www.tomshardware.com/2006/05/04/can_matroxs_triplehead2go_span_fun_across_three_displays/page8.html\">Tom&#39;s Hardware</a> and <a href=\"http://www.neoseeker.com/Articles/Hardware/Reviews/triplehead2go/5.html\">Neoseeker</a>.\r\n\r\n<p>\r\n<b>The traditional &quot;add another video card&quot; method is still the preferred way to gain entry into the prestigious three monitor club.</b> But for laptop users and gamers, the Matrox Triplehead2Go is also a nice option with <a href=\"http://www.matrox.com/graphics/en/gxm/products/th2go/faq.php\">a few caveats</a>.\r\n<p>\r\n", "title"=>"Joining The Prestigious Three Monitor Club"}, "commit"=>"Save", "authenticity_token"=>"GLl6ZHKyNiwoMX6s9WJ2jW7M5EdkV83WeSIfi3lvQe8=", "tags"=>"setup"}
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."name" = 'setup') LIMIT 1[0m
+  [4;35;1mTag Create (0.3ms)[0m   [0mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('setup', '2010-09-20 21:01:41', '2010-09-20 21:01:41')[0m
+  [4;36;1mArticle Create (0.5ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-20 21:01:41', 'Joining The Prestigious Three Monitor Club', '<p>
+I have something in common with Bill Gates and Larry Page:
+<p>
+<blockquote>
+<a href="http://www.sfgate.com/cgi-bin/article.cgi?file=/chronicle/archive/2000/12/31/BU178263.DTL">Larry Page</a>: I have a weird setup in my office. I have one computer with three monitors: one flat-screen monitor and two regular ones. I have my browser on one screen, my schedule on another and my e-mail on another. I can drag things to different screens. I also have a projector. So if I&#39;m talking with everyone in my office, I can move stuff onto a big screen. 
+
+<p>
+<a href="http://money.cnn.com/2006/03/30/news/newsmakers/gates_howiwork_fortune/">Bill Gates</a>: If you look at this office, there isn&#39;t much paper in it. On my desk I have three screens, synchronized to form a single desktop. I can drag items from one screen to the next. Once you have that large display area, you&#39;ll never go back, because it has a direct impact on productivity. 
+</p></blockquote>
+<p>
+We&#39;re all members of the <b>three monitor club</b>.
+<p>
+If you&#39;re only using one monitor, you are <a href="http://www.codinghorror.com/blog/archives/000012.html">cheating yourself out of potential productivity</a>. Two monitors is a no-brainer. It&#39;s so fundamental that I included it as a part of the <a href="http://www.codinghorror.com/blog/archives/000666.html">Programmer&#39;s Bill of Rights</a>.
+
+<p>
+But you can do better.
+<p>
+As good as two monitors is, <b>three monitors is <a href="http://www.codinghorror.com/blog/archives/000217.html">even better</a></b>. With three monitors, there&#39;s a &quot;center&quot; to focus on. And 50% more display area. While there&#39;s certainly a <a href="http://blogs.vertigosoftware.com/jatwood/archive/2005/08/28/Multiple_Monitor_Madness.aspx">point of diminishing returns for additional monitors</a>, I think three is the sweet spot. Even Edward Tufte, in <a href="http://www.codinghorror.com/blog/archives/000739.html">the class I recently attended</a>, explicitly mentioned multiple monitors. I don&#39;t care how large a single display can be; you can <i>never</i> have enough desktop space.
+
+<p>
+Normally, to achieve three monitors, you have to either:
+<ol>
+<li>Buy an exotic video card that has more than 2 monitor connections.
+<li>Install a second video card.
+</li></li></ol>
+<p>
+The first option is difficult because video cards with 3+ monitor connections are quite rare and usually expensive to boot. The second option, adding an additional video card, is easier, but not without some compatibility pitfalls of its own. But there&#39;s a third way that may be easiest of all. The Matrox <a href="http://www.matrox.com/graphics/en/gxm/products/th2go/home.php">TripleHead2Go</a> is a neat little external device that provides three display support from a single video output. And it&#39;s now available in analog VGA and <a href="http://www.matrox.com/graphics/en/gxm/products/th2go/digital/home.php">digital DVI editions</a>.
+<p>
+<img alt="matrox triplehead2go" border="0" class="at-xid-6a0120a85dcdae970b0128776fdccb970c" height="318" src="http://codinghorror.typepad.com/.a/6a0120a85dcdae970b0128776fdccb970c-pi" width="425" />
+
+<p>
+There is one big caveat, however. In a modern three monitor config, the operating system sees each monitor as an independently controllable desktop. You can set resolution, size, and position of the monitors independently, and windows can intelligently size themselves to each desktop on each monitor.
+<p>
+<img alt="display properties, three monitors" border="0" height="77" src="http://www.codinghorror.com/blog/images/display-properties-three-monitors.png" width="240" />
+<p>
+With the matrox Triplehead2Go, <b>you&#39;re stuck with one mongo giant desktop that spans all your monitors</b>.
+<p>
+<img alt="display properties, one ultra-ultra-widescreen monitor" border="0" height="77" src="http://www.codinghorror.com/blog/images/display-properties-triplehead.png" width="240" />
+<p>
+This is a very old-school way of implementing multiple monitors. Before Windows was properly aware of multiple displays (think NT 4.0 era), the &quot;giant desktop&quot; was the only way you could get more than one display to work at all. And &quot;giant desktop&quot; has a <i>lot</i> of downsides:
+
+<p>
+<ol>
+<li>Maximizing a window becomes an exercise in futility.
+<li>You may not want your start menu on the leftmost monitor.
+<li>With two monitors, &quot;centered&quot; dialogs split the middle.
+</li></li></li></ol>
+<p>
+To avoid the many problems of &quot;giant desktop&quot; fakery, you really need the OS to know that you&#39;re using two or three physical monitors, along with their resolutions, positions, and so forth.
+<p>
+But the Triplehead2Go has its charms. You don&#39;t have to open your computer to install it, for one thing. And it works with computers that <i>can&#39;t</i> be opened, such as laptops. The Triplehead2Go abstracts away the multiple monitors at a hardware level and presents itself to the operating system as a giant ultra widescreen monitor.
+
+<p>
+The Triplehead2Go also has one unexpected strength: <b>video games</b>. 3D acceleration across multiple video cards is tricky at best. And there&#39;s no good way to tell a game to use multiple monitors unless it&#39;s explicitly coded to do so. The Triplehead2Go device neatly sidesteps both of these limitations by externally simulating one ultra-ultra-wide monitor.
+<p>
+PCFormat UK experimented with the Triplehead2Go in a couple recent and upcoming game titles, such as <a href="http://blog.pcformat.co.uk/page/pcformat?entry=armed_assault_holy_trinity">Armed Assault</a>:
+<p>
+
+<a href="http://blog.pcformat.co.uk/resources/pcformat/windetriptych3.jpg"><img alt="Armed Assault on 3 monitors" border="0" class="at-xid-6a0120a85dcdae970b0128776fdce1970c" height="187" src="http://codinghorror.typepad.com/.a/6a0120a85dcdae970b0128776fdce1970c-pi" width="700" /></a>
+<p>
+Armed Assault also takes advantage of an optional <a href="http://www.naturalpoint.com/trackir/">TrackIR head-tracking device</a>. The combination of a three-monitor setup with head tracking is incredibly immersive, and has to be seen to be believed. <a href="http://blog.pcformat.co.uk/resources/pcformat/trinity.wmv">Watch the video and be amazed</a>.
+
+<p>
+Three-monitor setups are particularly strong in &quot;simulator&quot; type games where peripheral vision is crucial to gameplay. PC Format UK tried it with the recently released <a href="http://blog.pcformat.co.uk/page/pcformat/20060503">GTR2 racing game</a>, and the results are impressive.
+<p>
+
+<a href="http://blog.pcformat.co.uk/resources/pcformat/monzacrashw.jpg"><img alt="GTR2 on three monitors" border="0" class="at-xid-6a0120a85dcdae970b0128776fdcf6970c" height="187" src="http://codinghorror.typepad.com/.a/6a0120a85dcdae970b0128776fdcf6970c-pi" width="700" /></a>
+<p>
+There are lots more screenshots of various games running in triple-head mode at <a href="http://www.tomshardware.com/2006/05/04/can_matroxs_triplehead2go_span_fun_across_three_displays/page8.html">Tom&#39;s Hardware</a> and <a href="http://www.neoseeker.com/Articles/Hardware/Reviews/triplehead2go/5.html">Neoseeker</a>.
+
+<p>
+<b>The traditional &quot;add another video card&quot; method is still the preferred way to gain entry into the prestigious three monitor club.</b> But for laptop users and gamers, the Matrox Triplehead2Go is also a nice option with <a href="http://www.matrox.com/graphics/en/gxm/products/th2go/faq.php">a few caveats</a>.
+<p>
+', '2010-09-20 21:01:41')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO "articles_tags" ("tag_id", "article_id") VALUES (3, 2)[0m
+Redirected to http://localhost:3000/articles/2
+Completed in 109ms (DB: 2) | 302 Found [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-20 22:01:41) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.0ms)
+Completed in 17ms (View: 8, DB: 1) | 200 OK [http://localhost/articles/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 22:01:41) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-20 22:02:17) [GET]
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.7ms)
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.9ms)
+Completed in 26ms (View: 15, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 22:02:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-20 22:30:22) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.3ms)
+Completed in 18ms (View: 8, DB: 1) | 200 OK [http://localhost/articles/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-20 22:30:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-22 22:38:19) [GET]
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (10.9ms)
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.9ms)
+Completed in 52ms (View: 35, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-22 22:38:19) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-22 22:47:49) [GET]
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.8ms)
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.9ms)
+Completed in 28ms (View: 18, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-22 22:47:50) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-24 07:14:49) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 13:42:45) [GET]
+  [4;36;1mTag Load (17.6ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (3.1ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (12.9ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (33.0ms)
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (3.2ms)
+Completed in 196ms (View: 116, DB: 34) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 13:42:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 13:43:38) [GET]
+  [4;36;1mTag Load (0.6ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (0.7ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (6.8ms)
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.9ms)
+Completed in 23ms (View: 12, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 13:43:38) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 13:45:46) [GET]
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (1.1ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (7.8ms)
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (6.3ms)
+Completed in 31ms (View: 18, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 13:45:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 13:46:39) [GET]
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (9.2ms)
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.9ms)
+Completed in 28ms (View: 15, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 13:46:39) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 14:09:20) [GET]
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.6ms)
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.8ms)
+Completed in 21ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 14:09:20) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 14:09:22) [GET]
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (6.2ms)
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.8ms)
+Completed in 22ms (View: 12, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 14:09:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 14:09:57) [GET]
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.9ms)
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (3.4ms)
+Completed in 22ms (View: 12, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 14:09:58) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 14:23:44) [GET]
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.3ms)
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.8ms)
+Completed in 21ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 14:23:44) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 14:23:47) [GET]
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.7ms)
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.8ms)
+Completed in 23ms (View: 12, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 14:23:47) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 14:24:15) [GET]
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.9ms)
+  [4;35;1mTag Load (0.8ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (4.1ms)
+Completed in 24ms (View: 12, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 14:24:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 14:29:22) [GET]
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.5ms)
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.9ms)
+Completed in 21ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 14:29:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 14:30:34) [GET]
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.6ms)
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.8ms)
+Completed in 22ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 14:30:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 14:30:38) [GET]
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.7ms)
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.9ms)
+Completed in 22ms (View: 12, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 14:30:39) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 14:30:49) [GET]
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.6ms)
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.7ms)
+Completed in 21ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 14:30:50) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 14:31:35) [GET]
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.9ms)
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (3.0ms)
+Completed in 21ms (View: 12, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 14:31:36) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 14:31:38) [GET]
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.5ms)
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.9ms)
+Completed in 22ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 14:31:38) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 14:31:48) [GET]
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.6ms)
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.7ms)
+Completed in 21ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 14:31:48) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 14:33:00) [GET]
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.6ms)
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.9ms)
+Completed in 21ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 14:33:00) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 14:34:37) [GET]
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.5ms)
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.7ms)
+Completed in 21ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 14:34:37) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 14:40:28) [GET]
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.7ms)
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.7ms)
+Completed in 20ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 14:40:29) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 14:43:14) [GET]
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.7ms)
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (3.1ms)
+Completed in 22ms (View: 12, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 14:43:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 14:43:48) [GET]
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.6ms)
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.7ms)
+Completed in 21ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 14:43:48) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 14:44:58) [GET]
+  [4;36;1mTag Load (0.7ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (16.5ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (1.8ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (9.3ms)
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.8ms)
+Completed in 48ms (View: 14, DB: 19) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 14:44:59) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 14:45:51) [GET]
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.7ms)
+  [4;35;1mTag Load (0.6ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (3.9ms)
+Completed in 23ms (View: 12, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 14:45:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2010-09-25 14:46:42) [GET]
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" [0m
+Rendering template within layouts/application
+Rendering articles/new
+Completed in 193ms (View: 183, DB: 1) | 200 OK [http://localhost/articles/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 14:46:43) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 14:48:01) [GET]
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.7ms)
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.8ms)
+Completed in 22ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 14:48:01) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 14:48:40) [GET]
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.9ms)
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.9ms)
+Completed in 23ms (View: 12, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 14:48:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 14:50:30) [GET]
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (6.1ms)
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.9ms)
+Completed in 21ms (View: 12, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 14:50:30) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 14:50:33) [GET]
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.8ms)
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (3.1ms)
+Completed in 22ms (View: 12, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 14:50:34) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 14:51:09) [GET]
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (6.3ms)
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (3.3ms)
+Completed in 22ms (View: 13, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 14:51:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 14:51:56) [GET]
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.4ms)
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.6ms)
+Completed in 21ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 14:51:57) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 14:55:47) [GET]
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (22.9ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mTag Load (0.6ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (7.4ms)
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.8ms)
+Completed in 47ms (View: 13, DB: 24) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 14:55:48) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 14:57:01) [GET]
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (19.2ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mTag Load (0.6ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (7.0ms)
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (3.2ms)
+Completed in 44ms (View: 14, DB: 21) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 14:57:02) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 14:58:18) [GET]
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (12.0ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mTag Load (5.4ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (11.0ms)
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (3.1ms)
+Completed in 39ms (View: 13, DB: 18) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 14:58:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 14:58:52) [GET]
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (23.3ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mTag Load (1.5ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (7.7ms)
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (3.1ms)
+Completed in 47ms (View: 13, DB: 26) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 14:58:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 14:59:39) [GET]
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (19.5ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mTag Load (0.6ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (6.1ms)
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.9ms)
+Completed in 42ms (View: 12, DB: 21) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 14:59:39) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 15:02:03) [GET]
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (22.4ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mTag Load (0.6ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (7.2ms)
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.7ms)
+Completed in 46ms (View: 12, DB: 24) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 15:02:04) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 15:02:55) [GET]
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.6ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (6.8ms)
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (3.0ms)
+Completed in 24ms (View: 13, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 15:02:55) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 15:03:34) [GET]
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.3ms)
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.7ms)
+Completed in 21ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 15:03:34) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 15:04:34) [GET]
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (21.8ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (7.4ms)
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.9ms)
+Completed in 46ms (View: 13, DB: 23) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 15:04:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 15:06:29) [GET]
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.7ms)
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.6ms)
+Completed in 21ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 15:06:30) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 15:07:03) [GET]
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.4ms)
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (3.7ms)
+Completed in 22ms (View: 12, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 15:07:04) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 15:09:47) [GET]
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (20.9ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (6.3ms)
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (3.9ms)
+Completed in 45ms (View: 14, DB: 22) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 15:09:47) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 15:10:42) [GET]
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (25.3ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mTag Load (0.6ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (7.3ms)
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.9ms)
+Completed in 48ms (View: 13, DB: 27) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 15:10:43) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 15:11:32) [GET]
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (13.0ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (10.2ms)
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.9ms)
+Completed in 38ms (View: 16, DB: 14) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 15:11:33) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 15:13:54) [GET]
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (22.4ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mTag Load (0.6ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (6.1ms)
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.9ms)
+Completed in 44ms (View: 12, DB: 24) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 15:13:55) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 15:21:36) [GET]
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (19.9ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mTag Load (0.6ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (6.3ms)
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.9ms)
+Completed in 45ms (View: 12, DB: 21) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 15:21:37) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 15:24:25) [GET]
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (22.7ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mTag Load (0.6ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (7.1ms)
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (3.1ms)
+Completed in 46ms (View: 13, DB: 24) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 15:24:26) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 15:25:45) [GET]
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (19.2ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mTag Load (0.8ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (10.2ms)
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (3.7ms)
+Completed in 53ms (View: 18, DB: 21) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 15:25:47) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 15:26:53) [GET]
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (24.2ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mTag Load (0.6ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (6.1ms)
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.8ms)
+Completed in 48ms (View: 12, DB: 25) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 15:26:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 15:27:29) [GET]
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.6ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.9ms)
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.9ms)
+Completed in 27ms (View: 12, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 15:27:29) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 15:28:00) [GET]
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.4ms)
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.8ms)
+Completed in 23ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 15:28:01) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 15:29:29) [GET]
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.7ms)
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.7ms)
+Completed in 21ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 15:29:29) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-25 15:30:11) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.3ms)
+Completed in 54ms (View: 44, DB: 1) | 200 OK [http://localhost/articles/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 15:30:12) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-25 15:31:01) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.9ms)
+Completed in 92ms (View: 9, DB: 1) | 200 OK [http://localhost/articles/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 15:31:02) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-25 15:32:34) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (6.5ms)
+Completed in 20ms (View: 10, DB: 1) | 200 OK [http://localhost/articles/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 15:32:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-25 15:33:01) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.2ms)
+Completed in 90ms (View: 80, DB: 1) | 200 OK [http://localhost/articles/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 15:33:01) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-25 15:35:01) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.6ms)
+Completed in 19ms (View: 9, DB: 1) | 200 OK [http://localhost/articles/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 15:35:01) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-25 15:41:22) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;36;1mTag Load (15.6ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (21.1ms)
+Completed in 34ms (View: 9, DB: 16) | 200 OK [http://localhost/articles/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 15:41:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-25 15:45:36) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.7ms)
+Completed in 21ms (View: 9, DB: 1) | 200 OK [http://localhost/articles/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 15:45:36) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-25 15:47:25) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.1ms)
+Completed in 18ms (View: 8, DB: 1) | 200 OK [http://localhost/articles/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 15:47:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-25 15:52:03) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.4ms)
+Completed in 20ms (View: 9, DB: 1) | 200 OK [http://localhost/articles/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 15:52:03) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-25 15:58:13) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.6ms)
+Completed in 27ms (View: 16, DB: 1) | 200 OK [http://localhost/articles/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 15:58:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-25 15:58:49) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.2ms)
+Completed in 18ms (View: 8, DB: 1) | 200 OK [http://localhost/articles/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 15:58:49) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-25 15:59:26) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.4ms)
+Completed in 18ms (View: 8, DB: 1) | 200 OK [http://localhost/articles/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 15:59:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-25 16:00:51) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.2ms)
+Completed in 18ms (View: 8, DB: 1) | 200 OK [http://localhost/articles/2]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-25 16:00:52) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.9ms)
+Completed in 20ms (View: 9, DB: 1) | 200 OK [http://localhost/articles/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 16:00:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-25 16:05:17) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.5ms)
+Completed in 23ms (View: 9, DB: 1) | 200 OK [http://localhost/articles/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 16:05:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-25 16:06:05) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.4ms)
+Completed in 19ms (View: 8, DB: 1) | 200 OK [http://localhost/articles/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 16:06:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-25 16:07:36) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mTag Load (0.8ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.2ms)
+Completed in 21ms (View: 9, DB: 1) | 200 OK [http://localhost/articles/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 16:07:36) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-25 16:13:01) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.9ms)
+Completed in 19ms (View: 9, DB: 1) | 200 OK [http://localhost/articles/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 16:13:01) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-25 16:13:04) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.3ms)
+Completed in 18ms (View: 8, DB: 1) | 200 OK [http://localhost/articles/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 16:13:05) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-25 16:13:51) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.6ms)
+Completed in 18ms (View: 9, DB: 1) | 200 OK [http://localhost/articles/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 16:13:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-25 16:15:04) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.0ms)
+Completed in 18ms (View: 8, DB: 1) | 200 OK [http://localhost/articles/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 16:15:04) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-25 16:16:47) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (6.0ms)
+Completed in 20ms (View: 9, DB: 1) | 200 OK [http://localhost/articles/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 16:16:47) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 16:17:58) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_highlight-soft_75_cccccc_1x100.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 16:17:58) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-icons_222222_256x240.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-25 16:19:27) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.2ms)
+Completed in 18ms (View: 8, DB: 1) | 200 OK [http://localhost/articles/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 16:19:28) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-25 16:19:40) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.4ms)
+Completed in 19ms (View: 8, DB: 1) | 200 OK [http://localhost/articles/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 16:19:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-25 16:38:20) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (6.2ms)
+Completed in 20ms (View: 10, DB: 1) | 200 OK [http://localhost/articles/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 16:38:20) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-25 16:40:56) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (6.3ms)
+Completed in 20ms (View: 9, DB: 1) | 200 OK [http://localhost/articles/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 16:40:56) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-25 16:41:12) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.4ms)
+Completed in 18ms (View: 8, DB: 1) | 200 OK [http://localhost/articles/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 16:41:13) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-25 16:46:11) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (6.7ms)
+Completed in 91ms (View: 10, DB: 1) | 200 OK [http://localhost/articles/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 16:46:12) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-25 17:41:19) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;35;1mTag Load (14.0ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (19.6ms)
+Completed in 33ms (View: 9, DB: 15) | 200 OK [http://localhost/articles/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 17:41:19) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-25 19:29:13) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTag Load (11.3ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.9ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;36;1mTag Load (11.4ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (27.5ms)
+Completed in 113ms (View: 21, DB: 24) | 200 OK [http://localhost/articles/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 19:29:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 21:43:59) [GET]
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (11.0ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (20.5ms)
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (3.0ms)
+Completed in 159ms (View: 114, DB: 12) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 21:44:00) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 21:44:09) [GET]
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.6ms)
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.7ms)
+Completed in 20ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 21:44:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 21:48:33) [GET]
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (0.8ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (7.5ms)
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.9ms)
+Completed in 24ms (View: 13, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 21:48:34) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-25 23:03:09) [GET]
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (22.7ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (3.8ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (31.4ms)
+  [4;35;1mTag Load (0.6ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (5.6ms)
+Completed in 164ms (View: 41, DB: 28) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-25 23:03:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-26 16:31:32) [GET]
+  [4;36;1mTag Load (0.8ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (1.3ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (0.6ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (10.7ms)
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.8ms)
+Completed in 51ms (View: 33, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-26 16:31:33) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-26 16:32:43) [GET]
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.8ms)
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.8ms)
+Completed in 22ms (View: 12, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-26 16:32:44) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-26 16:46:46) [GET]
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 2 ) [0m
+Rendered articles/_article (5.6ms)
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (2.8ms)
+Completed in 21ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-26 16:46:47) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "body" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mCREATE TABLE "articles_tags" ("article_id" integer, "tag_id" integer) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mCREATE TABLE "tags" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100920203444')[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100920191112')[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100920195540')[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-26 16:51:11) [GET]
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 32ms (View: 16, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-26 16:51:11) [GET]
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 11ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-26 16:51:12) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-26 16:52:01) [GET]
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 11ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-26 16:52:02) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-26 16:52:45) [GET]
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-26 16:52:45) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-26 16:55:02) [GET]
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 11ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-26 16:55:02) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-26 16:55:49) [GET]
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 78ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-26 16:55:49) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-26 16:55:51) [GET]
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 11ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-26 16:55:51) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-26 16:57:17) [GET]
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 12ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-26 16:57:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-26 16:59:34) [GET]
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 17ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-26 16:59:34) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-26 17:00:11) [GET]
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 12ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-26 17:00:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-26 17:00:53) [GET]
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 11ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-26 17:00:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-26 17:28:27) [GET]
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 11ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-26 17:28:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-09-26 17:29:03) [GET]
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" ORDER BY created_at desc[0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 11ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-26 17:29:03) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2010-09-26 17:29:25) [GET]
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" [0m
+Rendering template within layouts/application
+Rendering articles/new
+Completed in 21ms (View: 13, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-26 17:29:26) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2010-09-26 17:30:20) [POST]
+  Parameters: {"article"=>{"body"=>"<p><strong>What a nice blog you have</strong></p>\r\n<p>It really is quite something</p>", "title"=>"Hello Charlie!"}, "commit"=>"Save", "authenticity_token"=>"GLl6ZHKyNiwoMX6s9WJ2jW7M5EdkV83WeSIfi3lvQe8=", "tags"=>"this, that, blog"}
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."name" = 'this') LIMIT 1[0m
+  [4;35;1mTag Create (0.4ms)[0m   [0mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('this', '2010-09-26 16:30:20', '2010-09-26 16:30:20')[0m
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."name" = 'that') LIMIT 1[0m
+  [4;35;1mTag Create (0.3ms)[0m   [0mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('that', '2010-09-26 16:30:20', '2010-09-26 16:30:20')[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."name" = 'blog') LIMIT 1[0m
+  [4;35;1mTag Create (0.3ms)[0m   [0mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES('blog', '2010-09-26 16:30:20', '2010-09-26 16:30:20')[0m
+  [4;36;1mArticle Create (0.3ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "body", "updated_at") VALUES('2010-09-26 16:30:20', 'Hello Charlie!', '<p><strong>What a nice blog you have</strong></p>
+<p>It really is quite something</p>', '2010-09-26 16:30:20')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "articles_tags" ("tag_id", "article_id") VALUES (1, 1)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "articles_tags" ("tag_id", "article_id") VALUES (2, 1)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "articles_tags" ("tag_id", "article_id") VALUES (3, 1)[0m
+Redirected to http://localhost:3000/articles/1
+Completed in 35ms (DB: 2) | 302 Found [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-26 17:30:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (90.3ms)
+Completed in 112ms (View: 101, DB: 1) | 200 OK [http://localhost/articles/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-26 17:30:20) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TagsController#show (for 127.0.0.1 at 2010-09-26 17:30:34) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering tags/show
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" INNER JOIN "articles_tags" ON "articles".id = "articles_tags".article_id WHERE ("articles_tags".tag_id = 1 ) [0m
+Completed in 20ms (View: 14, DB: 1) | 200 OK [http://localhost/tags/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-26 17:30:34) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TagsController#show (for 127.0.0.1 at 2010-09-26 17:30:38) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering tags/show
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" INNER JOIN "articles_tags" ON "articles".id = "articles_tags".article_id WHERE ("articles_tags".tag_id = 2 ) [0m
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/tags/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-26 17:30:39) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TagsController#show (for 127.0.0.1 at 2010-09-26 17:30:42) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering tags/show
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" INNER JOIN "articles_tags" ON "articles".id = "articles_tags".article_id WHERE ("articles_tags".tag_id = 3 ) [0m
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/tags/3]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-26 17:30:42) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TagsController#show (for 127.0.0.1 at 2010-09-26 17:30:46) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" [0m
+  [4;35;1mTag Load (0.1ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering tags/show
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" INNER JOIN "articles_tags" ON "articles".id = "articles_tags".article_id WHERE ("articles_tags".tag_id = 2 ) [0m
+Completed in 94ms (View: 11, DB: 1) | 200 OK [http://localhost/tags/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-26 17:30:47) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-09-26 17:30:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" [0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering articles/show
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" INNER JOIN "articles_tags" ON "tags".id = "articles_tags".tag_id WHERE ("articles_tags".article_id = 1 ) [0m
+Rendered articles/_article (5.9ms)
+Completed in 19ms (View: 9, DB: 1) | 200 OK [http://localhost/articles/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-26 17:30:55) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
