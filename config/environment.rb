@@ -22,7 +22,7 @@ Rails::Initializer.run do |config|
   config.gem "authlogic"
   config.gem "authlogic-oid", :lib => "authlogic_openid"
   config.gem "ruby-openid", :lib => "openid"
-  config.gem "formtastic"
+  config.gem "formtastic", :version => "1.1.0.beta"
   
 
   # Only load the plugins named here, in the order given (default is alphabetical).

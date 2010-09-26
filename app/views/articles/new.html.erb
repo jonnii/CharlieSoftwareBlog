@@ -4,16 +4,9 @@
    });
 </script>
 
-<% form_for @article do |f| %>
+<% semantic_form_for @article do |f| %>
 
-    <p>
-      <%= f.label :title %>
-      <%= f.text_field :title %>
-    </p>
-    <p>
-      <%= f.label :body %>
-      <%= f.text_area :body %>
-    </p>
+  <%= f.inputs :title, :body %>
     <p>
       <label for="tags">Tags</label>
       <input type="text" name="tags" id="tags"/>
